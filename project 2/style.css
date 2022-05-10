@@ -1,0 +1,165 @@
+/*Global*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #E4E4E4;
+    font-family: "vazir";
+}
+@font-face {
+    font-family: "Vazir";
+    src: url("./fonts/Vazir.ttf");
+    src: url("./fonts/Vazir.woff");
+
+}
+/*--NAVBAR--*/
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    background: #fff;
+}
+nav img{
+    justify-self:start;
+    align-self: center;
+}
+nav span{
+    justify-self: center;
+    align-self: center;
+}
+nav ul{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul  li a{
+    text-decoration: none;
+    margin: 0 0.4em;
+    color: #0000ff ;
+}
+nav a.icon {
+    padding: 1em;
+    width: 5%;
+    height: 100%;
+    background: #fff;
+    border: solid  #000 2px;
+    display: block;
+    position: absolute;
+    color: #000 ;
+    right: 0;
+    top: 0;
+}
+/*MODAL*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .section-contact{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    background: white;
+    border-radius: 10px;
+}
+.section-contact p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding:1em 0 20px 0;
+    margin-bottom: 1em;
+    border-bottom: 1px solid silver;
+}
+.section-contact form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .txt-field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.txt-field input{
+    width: 100%;
+    padding:0 5px ;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.txt-field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.txt-field span::before{
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #2691d9;
+}
+.txt-field input:focus ~ label,
+.txt-field input:focus ~ label{
+    top: -5px;
+    color: #2691d9;
+
+}
+.section-contact .phone-field {
+    text-align: center;
+}
+.section-contact .phone-field input{
+    padding: 1em 4em;
+    margin: 1em 0 2em 0;
+    color: #2691d9;
+    border: #2691d9 solid 1px;
+    background: #cfccc6;
+}

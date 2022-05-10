@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ِDental | Welcome</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="container">
+        <nav>
+            <img src="./img/images.png" alt="Logo" width="7%" height="7%">
+            <span>کلینیک دندان پزشکی</span>
+            <ul id="myLinks">
+                <li><a href="#">تهیه نوبت</a></li>
+                <li><a href="#">تیم پزشکان</a></li>
+                <li><a href="#">خدمات</a></li>
+                <li><a href="#">ارتباط تلفنی</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <button id="myBtn">Open Modal</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div>
+                <p>Wanna come on my next trip? Contact Me.</p>
+        <form method="post">
+            <div class="txt-field">
+                <input type="text" name="txt-user" id="name-user" required>
+                <span></span>
+                <label>Username</label>
+            </div>
+            <div class="txt-field">
+                <input type="email" name="email-user" id="email-user" required>
+                <span></span>
+                <label>email</label>
+            </div>
+            <div class="txt-field">
+                <input type="email" name="phone-user" id="phone-user" required>
+                <span></span>
+                <label>Contact Number</label>
+            </div>
+            <div class="phone-field">
+                <input type="button" value="Submit">
+            </div>
+        </form>
+            </div>
+        </div>
+</div>
+    </main>
+    <script src="./function.js"></script>
+</body>
+</html>
